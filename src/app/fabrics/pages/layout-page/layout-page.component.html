@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="logo">
+        <img [src]="logo" alt="">
+    </div>
+
+    
+</div>
+<div class="title">    
+    <h1>Telas</h1>
+    <div class="button">
+        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" />
+    </div>
+</div>
+
+
+<p-sidebar [(visible)]="sidebarVisible">
+    <h3>Telas</h3>
+    <p-panelMenu [model]="items" styleClass="w-full md:w-20rem" />
+    <h3>Simil Cuero</h3>
+    <p-panelMenu [model]="items2" styleClass="w-full md:w-20rem" />
+</p-sidebar>
+<router-outlet/>
+
