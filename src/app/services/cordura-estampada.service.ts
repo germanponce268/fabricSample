@@ -7,10 +7,10 @@ export class CorduraEstampadaService extends PhotoService{
         return [
             
             {
-                itemImageSrc: '../assets/images/marcianos.jpg',
-                thumbnailImageSrc: '../assets/images/thumb-marciano.jpg',
+                itemImageSrc: '../assets/images/aliens-cordura-liviana.jpg',
+                thumbnailImageSrc: '../assets/images/thumb-aliens-cordura-liviana.jpg',
                 alt: 'Es una tela liviana y flexible, altamente resistente e impermeable, diseñada para brindar una protección duradera.',
-                title: 'Marcianos Cordura Liviana'
+                title: 'Aliens Cordura Liviana'
             },
             {
                 itemImageSrc: '../assets/images/cordura-liviana-calaveras.jpg',
