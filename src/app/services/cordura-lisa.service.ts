@@ -17,6 +17,12 @@ export class CorduraLisaService extends PhotoService{
                 thumbnailImageSrc: '../assets/images/thumb-cordura-verde-600x600.jpg',
                 alt: 'Es una tela plástica compuesta por un tejido de poliester cubierto del reverso con una lámina de PVC. Posee buena resistencia a los efectos de la luz natural, fácil de lavar, seca rápidamente, no se deforma.',
                 title: 'Cordura Verde Beneton'
+            },
+            {
+                itemImageSrc: '../assets/images/cordura-verde-militar.jpg',
+                thumbnailImageSrc: '../assets/images/thumb-cordura-verde-militar.jpg',
+                alt: 'Es una tela plástica compuesta por un tejido de poliester cubierto del reverso con una lámina de PVC. Posee buena resistencia a los efectos de la luz natural, fácil de lavar, seca rápidamente, no se deforma.',
+                title: 'Cordura Verde Militar'
             }
         ];
     }

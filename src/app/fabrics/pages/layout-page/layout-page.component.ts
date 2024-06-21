@@ -26,8 +26,12 @@ export class LayoutPageComponent {
  public items: MenuItem[] = [];
  public items2: MenuItem[] = [];
  public logo!: string; 
+ public store!: string;
+ public icon!: string;
     ngOnInit() {
         this.logo = '/assets/images/logo-light.png';
+        this.store = 'https:/sinetiqtas.mitiendanube.com/'
+        this.icon = '/assets/images/instagram-icon.png'
         this.items = [
             {
                 label: 'Cordura',

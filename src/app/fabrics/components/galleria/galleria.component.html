@@ -1,5 +1,6 @@
 <div class="container">
     <p-galleria 
+        #galleria
         [value]="images" 
         [responsiveOptions]="responsiveOptions" 
         [containerStyle]="{ 'max-width': '640px','min-width': '240px' }" 
@@ -17,6 +18,12 @@
                     {{ item.title }}
                 </h4>
                 <p>{{ item.alt }}</p>
+            </ng-template>
+            <ng-template pTemplate="footer" let-item>
+                <div class="custom-galleria-footer">
+                    <button type="button" pButton [icon]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button">
+                    </button>
+                </div>
             </ng-template>
     </p-galleria>
 </div>

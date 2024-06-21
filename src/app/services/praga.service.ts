@@ -11,9 +11,15 @@ export class PragaService extends PhotoService{
         {
             itemImageSrc: '../assets/images/praga-suela-claro.jpg',
             thumbnailImageSrc: '../assets/images/thumb-praga-suela-claro.jpg',
-            alt: 'Producto biodegradable Vinylife, resistente durante el uso y biodegradable cuando se deja de usar. Una vez desechado, se biodegrada dejando restos orgánicos y atóxicos, permitiendo una gestión armoniosa con el medioambiente.',
+            alt: 'Producto biodegradable Vinylife, resistente durante el uso y biodegradable cuando se deja de usar.',
             title: 'Praga Suela Claro'
-        }
+        },
+        {
+          itemImageSrc: '../assets/images/praga-negro.jpg',
+          thumbnailImageSrc: '../assets/images/thumb-praga-negro.jpg',
+          alt: 'Producto biodegradable Vinylife, resistente durante el uso y biodegradable cuando se deja de usar.',
+          title: 'Praga Negro'
+      }
     ];
 }
 override getImages() {

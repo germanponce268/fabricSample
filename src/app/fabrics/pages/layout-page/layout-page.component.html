@@ -1,23 +1,44 @@
-<div class="container">
-    <div class="logo">
-        <img [src]="logo" alt="">
+<div class="body">
+    
+    <div class="container">
+        <div class="logo">
+            <img [src]="logo" alt="">
+        </div>
+    
+        
     </div>
+    <div class="title">    
+        <h1>Telas</h1>
+        <div class="button">
+            <p-button (click)="sidebarVisible = true" severity="help"  icon="pi pi-arrow-right" />
+        </div>
+    </div>
+    
 
     
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Telas</h3>
+        <p-panelMenu [model]="items" styleClass="w-full md:w-20rem" />
+        <h3>Simil Cuero</h3>
+        <p-panelMenu [model]="items2" styleClass="w-full md:w-20rem" />
+    </p-sidebar>
 </div>
-<div class="title">    
-    <h1>Telas</h1>
-    <div class="button">
-        <p-button (click)="sidebarVisible = true" severity="help"  icon="pi pi-arrow-right" />
-    </div>
-</div>
-
-
-<p-sidebar [(visible)]="sidebarVisible">
-    <h3>Telas</h3>
-    <p-panelMenu [model]="items" styleClass="w-full md:w-20rem" />
-    <h3>Simil Cuero</h3>
-    <p-panelMenu [model]="items2" styleClass="w-full md:w-20rem" />
-</p-sidebar>
 <router-outlet/>
+
+<div class="links">
+        <div class="subtitle">
+            <span>© 2024 SinEtiqtas <br> </span>
+        </div>
+      <br>
+      <a [href]="store">Nuestra Tienda Online</a> 
+      <br>
+      <ul class="list">
+        <li>
+          <a href="https://www.instagram.com/sinetiqtas/"><img [src]="icon" alt="Instagram"></a>
+        </li>
+      </ul>
+      
+
+</div>
+
 
