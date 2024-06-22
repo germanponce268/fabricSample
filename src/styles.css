@@ -11,6 +11,7 @@
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .title{
@@ -62,8 +63,8 @@
     padding-left: 5%;
 }
 
-.texto p{
-
+.relleno{
+    height: 350px;
 }
 @media screen and (max-width:560px) {
     .links{

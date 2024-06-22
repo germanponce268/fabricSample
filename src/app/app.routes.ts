@@ -17,6 +17,7 @@ export const routes : Routes = [
             {
                 path:'cordura-melange',
                 loadComponent: () => import('./fabrics/pages/cordura-melange/cordura-melange.component').then(c=>c.CorduraMelangeComponent)
+                
             },
             {
                 path:'gabardina-estampada',

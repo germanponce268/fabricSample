@@ -19,13 +19,9 @@
                 <h4 style="margin-bottom: .5rem; color: #ffffff;">
                     {{ item.title }}
                 </h4>
-                
-            </ng-template>
-            <ng-template pTemplate="footer" let-item>
-                <div class="custom-galleria-footer">
-                    <button type="button" pButton [icon]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button">
-                    </button>
-                </div>
+                <span></span>
+                <button type="button" pButton [icon]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button">
+                </button>
             </ng-template>
         </p-galleria>
         <div class="texto">

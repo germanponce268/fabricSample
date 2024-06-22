@@ -1,5 +1,5 @@
-import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
-import { Route, Router, RouterModule } from '@angular/router';
+import { AfterViewInit, ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
+import { Route, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { Galleria, GalleriaModule } from 'primeng/galleria';
 import { PhotoService } from '../../../services/image.service';
@@ -16,7 +16,7 @@ import { MenuItem } from 'primeng/api';
   styles: [],
 providers:[PhotoService]
 })
-export class LayoutPageComponent {
+export class LayoutPageComponent implements AfterViewInit{
   public sidebarVisible: boolean = false;
   public sidebarItems = [
     {label:'estampadas', url:'./estampadas'},
@@ -28,7 +28,8 @@ export class LayoutPageComponent {
  public logo!: string; 
  public store!: string;
  public icon!: string;
-
+@ViewChild(RouterOutlet) routerOutlet!: RouterOutlet;
+ public activatedRoute! : Object;
  constructor(
     private router: Router
  ){}
@@ -100,5 +101,13 @@ export class LayoutPageComponent {
                 routerLink:'./praga'
             }
         ]
+    }
+
+    ngAfterViewInit(){
+        this.routerOutlet.activateEvents.subscribe(event=>{
+            this.activatedRoute = event;
+            console.log(event,"event")
+            console.log(this.routerOutlet.activatedRoute, "route");
+        })
     }
 }

@@ -11,7 +11,11 @@
         </div>
     </div>
     
-    
+    @if(!activatedRoute){
+        <div class="relleno">
+            
+        </div>
+    }
 
     <p-sidebar [(visible)]="sidebarVisible">
         <h3>Telas</h3>
@@ -20,7 +24,7 @@
         <p-panelMenu [model]="items2" styleClass="w-full md:w-20rem" />
     </p-sidebar>
 </div>
-<router-outlet/>
+<router-outlet #routerOutlet="outlet"/>
 
 <div class="links">
         <div class="subtitle">
