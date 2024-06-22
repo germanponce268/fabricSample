@@ -35,7 +35,7 @@ export class LayoutPageComponent implements AfterViewInit{
  ){}
     ngOnInit() {
         this.logo = '/assets/images/logo-light.png';
-        this.store = 'https:/sinetiqtas.mitiendanube.com/'
+        this.store = 'https://sinetiqtas.mitiendanube.com/'
         this.icon = '/assets/images/instagram-icon.png'
         this.items = [
             {
