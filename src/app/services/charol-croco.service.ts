@@ -12,13 +12,13 @@ export class CharolCrocoService extends PhotoService{
             itemImageSrc: '../assets/images/charol-crocko-negro.jpg',
             thumbnailImageSrc: '../assets/images/thumb-charol-crocko-negro.jpg',
             alt: 'La tela charol croco es un material sintético con una capa brillante y un patrón en relieve que imita la piel de cocodrilo. Es duradera, impermeable y fácil de limpiar.',
-            title: 'Charol Croco'
+            title: 'Charol Croco Negro'
         },
         {
           itemImageSrc: '../assets/images/charol-crocko-magenta.jpg',
           thumbnailImageSrc: '../assets/images/thumb-charol-crocko-magenta.jpg',
           alt: 'La tela charol croco es un material sintético con una capa brillante y un patrón en relieve que imita la piel de cocodrilo. Es duradera, impermeable y fácil de limpiar.',
-          title: 'Charol Croco'
+          title: 'Charol Croco Magenta'
       }
     ];
 }
