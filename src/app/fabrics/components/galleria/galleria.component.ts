@@ -3,7 +3,7 @@ import { PhotoService } from '../../../services/image.service';
 import { Galleria, GalleriaModule } from 'primeng/galleria';
 import { CorduraEstampadaService } from '../../../services/cordura-estampada.service';
 import { ButtonModule } from 'primeng/button';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-galleria',
   standalone: true,
@@ -32,7 +32,11 @@ export class GalleriaComponent {
       }
   ];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any, private photoService: PhotoService,  private cd: ChangeDetectorRef) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: any, 
+    @Inject(DOCUMENT) private document : Document,
+    private photoService: PhotoService,  
+    private cd: ChangeDetectorRef) {}
   @ViewChild('galleria') galleria?: Galleria ;
   ngOnInit() {
       this.photoService.getImages().then((images) => (this.images = images));
@@ -59,17 +63,17 @@ onFullScreenChange() {
 
 bindDocumentListeners() {
     this.onFullScreenListener = this.onFullScreenChange.bind(this);
-    document.addEventListener('fullscreenchange', this.onFullScreenListener);
-    document.addEventListener('mozfullscreenchange', this.onFullScreenListener);
-    document.addEventListener('webkitfullscreenchange', this.onFullScreenListener);
-    document.addEventListener('msfullscreenchange', this.onFullScreenListener);
+    this.document.addEventListener('fullscreenchange', this.onFullScreenListener);
+    this.document.addEventListener('mozfullscreenchange', this.onFullScreenListener);
+    this.document.addEventListener('webkitfullscreenchange', this.onFullScreenListener);
+    this.document.addEventListener('msfullscreenchange', this.onFullScreenListener);
 }
 
 unbindDocumentListeners() {
-    document.removeEventListener('fullscreenchange', this.onFullScreenListener);
-    document.removeEventListener('mozfullscreenchange', this.onFullScreenListener);
-    document.removeEventListener('webkitfullscreenchange', this.onFullScreenListener);
-    document.removeEventListener('msfullscreenchange', this.onFullScreenListener);
+    this.document.removeEventListener('fullscreenchange', this.onFullScreenListener);
+    this.document.removeEventListener('mozfullscreenchange', this.onFullScreenListener);
+    this.document.removeEventListener('webkitfullscreenchange', this.onFullScreenListener);
+    this.document.removeEventListener('msfullscreenchange', this.onFullScreenListener);
     this.onFullScreenListener = null;
 }
 
