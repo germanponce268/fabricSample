@@ -1,13 +1,15 @@
 <div class="container">
+    
+    
     <p-galleria 
-        #galleria
-        [value]="images" 
-        [responsiveOptions]="responsiveOptions" 
-        [containerStyle]="{ 'max-width': '640px','min-width': '240px' }" 
+    #galleria
+    [value]="images" 
+    [responsiveOptions]="responsiveOptions" 
+    [containerStyle]="{ 'max-width': '640px','min-width': '240px' }" 
         [numVisible]="5">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
-            </ng-template>
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
             <ng-template pTemplate="thumbnail" let-item>
                 <div class="grid grid-nogutter justify-content-center">
                     <img [src]="item.thumbnailImageSrc" style="display: block;" />
@@ -17,7 +19,7 @@
                 <h4 style="margin-bottom: .5rem; color: #ffffff;">
                     {{ item.title }}
                 </h4>
-                <p>{{ item.alt }}</p>
+                
             </ng-template>
             <ng-template pTemplate="footer" let-item>
                 <div class="custom-galleria-footer">
@@ -25,5 +27,13 @@
                     </button>
                 </div>
             </ng-template>
-    </p-galleria>
-</div>
+        </p-galleria>
+        <div class="texto">
+            @if(images){
+                <p>
+                    {{images[0].alt}}
+                </p>
+            }
+        </div>
+        
+    </div>

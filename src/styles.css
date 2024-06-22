@@ -29,6 +29,7 @@
     background-color: rgb(62, 61, 61);
     margin-top: 2%;
     display: flex;
+    color: aliceblue;
     justify-content: center;
     align-items: center;
     
@@ -52,6 +53,18 @@
     height: 100%;
 }
 
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.texto p{
+
+}
 @media screen and (max-width:560px) {
     .links{
         display: flex;
@@ -60,4 +73,16 @@
     .subtitle{
         margin-top: 0px;
     }
+    .container{
+        display: block;
+
+    }
+    .container .texto{
+        margin: auto;
+        width: 100%;
+    }
+    .body{
+        height: 100%;
+    }
 }
+

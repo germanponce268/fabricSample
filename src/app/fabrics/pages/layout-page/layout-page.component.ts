@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Route, Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { Galleria, GalleriaModule } from 'primeng/galleria';
 import { PhotoService } from '../../../services/image.service';
@@ -28,6 +28,10 @@ export class LayoutPageComponent {
  public logo!: string; 
  public store!: string;
  public icon!: string;
+
+ constructor(
+    private router: Router
+ ){}
     ngOnInit() {
         this.logo = '/assets/images/logo-light.png';
         this.store = 'https:/sinetiqtas.mitiendanube.com/'

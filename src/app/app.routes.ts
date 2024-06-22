@@ -42,8 +42,8 @@ export const routes : Routes = [
         ]
     },
     {
-        path:'',
-        redirectTo:'telas',
+        path:'**',
+        redirectTo:'cordura-estampada',
         pathMatch:'full'
     }
 ]

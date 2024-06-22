@@ -12,7 +12,7 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
   styleUrl: './galleria.component.css',
 })
 export class GalleriaComponent {
-  images: any[] | undefined;
+  images?: any[] | undefined;
   onFullScreenListener: any;
   fullscreen: boolean = false;
   showThumbnails: boolean | undefined;
@@ -43,6 +43,7 @@ export class GalleriaComponent {
       if (isPlatformBrowser(this.platformId)) {
         this.bindDocumentListeners();
       }
+    
   }
 
   toggleFullScreen() {
