@@ -17,6 +17,18 @@ export class CorduraMelangeService extends PhotoService{
                 thumbnailImageSrc: '../assets/images/thumb-cordura-melange-violeta.jpg',
                 alt: 'Es una tela plástica compuesta por un tejido de poliester cubierto del reverso con una lámina de PVC. Posee buena resistencia a los efectos de la luz natural, fácil de lavar, seca rápidamente, no se deforma.',
                 title: 'Cordura Melange Violeta'
+            },
+            {
+                itemImageSrc: '../assets/images/cordura-melange-roja.jpg',
+                thumbnailImageSrc: '../assets/images/thumb-cordura-melange-roja.jpg',
+                alt: 'Es una tela plástica compuesta por un tejido de poliester cubierto del reverso con una lámina de PVC. Posee buena resistencia a los efectos de la luz natural, fácil de lavar, seca rápidamente, no se deforma.',
+                title: 'Cordura Melange Roja'
+            },
+            {
+                itemImageSrc: '../assets/images/cordura-melange-beige.jpg',
+                thumbnailImageSrc: '../assets/images/thumb-cordura-melange-beige.jpg',
+                alt: 'Es una tela plástica compuesta por un tejido de poliester cubierto del reverso con una lámina de PVC. Posee buena resistencia a los efectos de la luz natural, fácil de lavar, seca rápidamente, no se deforma.',
+                title: 'Cordura Melange Beige'
             }
         ];
     }

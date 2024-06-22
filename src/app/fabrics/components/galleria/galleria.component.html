@@ -16,12 +16,14 @@
                 </div>
             </ng-template>
             <ng-template pTemplate="caption" let-item>
-                <h4 style="margin-bottom: .5rem; color: #ffffff;">
-                    {{ item.title }}
-                </h4>
-                <span></span>
-                <button type="button" pButton [icon]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button">
-                </button>
+                <div class="flex justify-content-between">
+                    <h4 style="margin-bottom: .5rem; color: #ffffff;">
+                        {{ item.title }}
+                    </h4>
+                    <span></span>
+                    <button severity="help" type="button" pButton [icon]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button">
+                    </button>
+                </div>
             </ng-template>
         </p-galleria>
         <div class="texto">
