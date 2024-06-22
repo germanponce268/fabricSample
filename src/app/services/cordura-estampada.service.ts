@@ -40,7 +40,7 @@ export class CorduraEstampadaService extends PhotoService{
                 itemImageSrc: '../assets/images/cordura-estampada-dinosaurios-unicornios-fondo-negro.jpg',
                 thumbnailImageSrc: '../assets/images/thumb-cordura-estampada-dinosaurios-unicornios-fondo-negro.jpg',
                 alt: 'Es una tela liviana y flexible, altamente resistente e impermeable, diseñada para brindar una protección duradera.',
-                title: 'Flores Rojas Fondo Negro Cordura Liviana'
+                title: 'Cordura Dinosaurios Y Unicornios Fondo Negro'
             }
         ];
     }
