@@ -28,12 +28,14 @@ export class LayoutPageComponent implements AfterViewInit{
  public logo!: string; 
  public store!: string;
  public icon!: string;
+ public home!: string;
 @ViewChild(RouterOutlet) routerOutlet!: RouterOutlet;
  public activatedRoute! : Object;
  constructor(
     private router: Router
  ){}
     ngOnInit() {
+        this.home = '/';
         this.logo = '/assets/images/logo-light.png';
         this.store = 'https://sinetiqtas.mitiendanube.com/'
         this.icon = '/assets/images/instagram-icon.png'

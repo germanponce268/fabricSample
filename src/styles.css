@@ -71,7 +71,21 @@ body{
 
 .relleno{
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
+.relleno p{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
 @media screen and (max-width:560px) {
     .links{
         display: flex;

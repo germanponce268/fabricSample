@@ -1,7 +1,9 @@
 <div class="body">
     <div class="container">
         <div class="logo">
-            <img [src]="logo" alt="">
+            <a [routerLink]="home">
+                <img [src]="logo" alt="">
+            </a>
         </div>
     </div>
     <div class="title">    
@@ -13,7 +15,8 @@
     
     @if(!activatedRoute){
         <div class="relleno">
-
+            <p>Aca podes elegir la tela que mas te guste</p>
+        
         </div>
     }
 
